@@ -19,3 +19,6 @@ Pin Setup:Pin 3 is used to control the relay, which in turn controls the water s
 Water Level Detection:The digitalRead(6) function checks the state of the soil sensor. If the soil is wet (water == HIGH), the relay is turned off (digitalWrite(3, LOW)), stopping the water supply. If the soil is dry (water == LOW), the relay is turned on (digitalWrite(3, HIGH)), allowing the water supply to continue.
 Delay:A delay of 400 milliseconds is added to reduce the possibility of toggling the relay too rapidly.
 Possible Improvements: Debouncing: If the sensor reads noise or fluctuates quickly, consider adding a debounce logic to smooth out the signal. Analog Sensor: If you're using an analog sensor instead of a digital one, you would use analogRead(6) and adjust your logic based on the analog value to define when the soil is sufficiently dry or wet.
+#Circuit Diagram
+<img width="1602" height="1710" alt="image" src="https://github.com/user-attachments/assets/b92325fe-aba6-4f30-99ab-4ef4363153ca" />
+
